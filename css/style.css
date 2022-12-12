@@ -1,0 +1,127 @@
+:root {
+    font-size: 62,5%;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+.welcome {
+    flex-basis: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, lightpink , antiquewhite);
+    text-align: center;
+}
+
+.cat {
+    margin-right: 1rem;
+}
+
+.milk {
+    margin-left: -1rem;
+}
+
+.music_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.music_section > div:first-of-type {
+    margin: 1rem 0;
+}
+
+@media (max-width: 767px) {
+    :root {
+        font-size: 0.8rem;
+    }
+    
+    .small_player{
+        width: 20%;
+    }
+
+    .big_player {
+        display: none;
+    }
+
+    img {
+        width: 20%;
+    }
+}
+
+@media (min-width: 768px) {
+    .small_player {
+        display: none
+    }
+
+    .big_player {
+        width: 100%;
+    }
+}
+
+
+.info {
+    width: 40%;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.album_section {
+    text-align: center;
+}
+
+form {
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.name, .email {
+    
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+
+.name > input, .email > input {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.email > input {
+    margin-bottom: 1rem;
+}
+
+.button {
+    text-align: center;
+}
+
+.button > input {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    
+}
+
+.button > input:hover {
+    color: lightcoral;
+}

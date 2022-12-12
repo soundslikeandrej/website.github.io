@@ -8,6 +8,53 @@
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-	<h1>Welcome to my website which is under construction</h1>
+
+	<header class="welcome">
+		<img class="cat" src="./images/cat.gif" alt="gif of a white cat">
+		<h1>Sounds like Andrej</h1>
+		<img class="milk" src="./images/milk.gif" alt="gif of milk">
+	</header>
+
+	<article class="music_section">
+		<div>
+			<h2>I make music:</h2>
+		</div>
+		<section class="album_section">
+			<iframe class="big_player" style="border: 0; width: 18rem; height: 18rem;" src="https://bandcamp.com/EmbeddedPlayer/album=4229242310/size=large/bgcol=ffffff/linkcol=333333/minimal=true/transparent=true/" seamless><a href="https://soundslikeandrej.bandcamp.com/album/ordinary-life">Ordinary Life by Sounds like Andrej</a></iframe>
+
+			<iframe class="small_player" style="border: 0; width: 80%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=4229242310/size=small/bgcol=ffffff/linkcol=333333/transparent=true/" seamless><a href="https://soundslikeandrej.bandcamp.com/album/ordinary-life">Ordinary Life by Sounds like Andrej</a></iframe>
+
+		</section>
+	</article>
+
+	<article class="wrapper">
+		<section class="info">
+			<h2>Please consider subscribing to my newsletter for future updates:</h2>
+		</section>
+		<form target="_blank" action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
+	
+			<!-- Name -->
+			<div class="name">
+				<div>Name:</div>
+				<input type="text" name="name" placeholder="beautiful name &#128571;"/>
+			</div>
+			
+			<!-- Email field (required) -->
+			<div class="email">
+				<div>Email:</div>
+				<input type="text" name="email" placeholder="cool email &#128526;"/>
+			</div>
+	
+			<!-- List token -->
+			<!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
+			<input type="hidden" name="campaign_token" value="LJOZL" />
+			<!-- Add subscriber to the follow-up sequence with a specified day (optional) -->
+			<input type="hidden" name="start_day" value="0" />
+			<!-- Subscriber button -->
+			<div class="button">
+				<input type="submit" value="Subscribe" />
+			</div>
+		</form>
+	</article>
 </body>
 </html>
