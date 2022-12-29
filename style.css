@@ -1,0 +1,375 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gochi Hand', cursive;
+} 
+
+html{
+    background: url("./images/paper-texture-colorful-abstract-background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* IE */
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main_bg_2.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/main_bg_2.jpg', sizingMethod='scale')";
+}
+
+
+nav {
+    
+  display: flex;
+  flex-direction: row;
+  height: 155px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px 0px 150px;
+  flex-wrap: wrap;
+  position: sticky;
+    top: 0;
+    z-index: 99;
+    
+}
+
+nav {
+background: #f2d5cff5;
+background: -webkit-linear-gradient(left, #f2d5cff5, #C4E3D3);
+background: -moz-linear-gradient(left, #f2d5cff5, #C4E3D3);
+background: linear-gradient(to right, #f2d5cff5, #C4E3D3);
+   
+}
+
+nav .logo img {
+    width: 15rem;
+    overflow: hidden;
+    position: fixed; 
+    top: -40px;
+    left: 30px;
+}
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #a796fc;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 8px 15px;
+  /* border-radius: 5px; */
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+nav ul li a:active {
+    color: #111;
+    /* background: #fff; */
+}
+
+nav .menu-btn i{
+  color: #CCC2FF;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 20px 0 150px;
+  }
+}
+@media (max-width: 920px) {
+    nav .logo img{
+    width: 7.8rem;
+    overflow: hidden;
+    position: fixed; 
+    top: -20px;
+    }
+
+  nav .menu-btn i{
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+
+  nav {
+    justify-content: space-between;
+    height: 90px;
+  }
+
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+
+  
+
+    .section-video {
+        /* height: 40vh; */
+        scroll-margin-top: 10rem;
+    }
+
+    .section-shows {
+        text-align: center;
+        /* height: 100vh; */
+        margin-top: 5vh;
+        scroll-margin-top: 6rem;
+    }
+
+    .section-music {
+        text-align: center;
+        margin-top: 5vh;
+        scroll-margin-top: 6rem;
+        /* height: 100vh; */
+    }
+
+    .section-about {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 5vh;
+        scroll-margin-top: 6rem;
+        /* height: 100vh; */
+        width: 80vw;
+    }
+
+    .section-about p {
+        font-size: 1rem;
+        font-family: 'Patrick Hand', cursive;
+    }
+
+    .section-contact {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 5vh;
+        scroll-margin-top: 6rem;
+        /* height: 80vh; */
+        width: 80vw;
+    }
+
+    .section-contact a {
+        color: #a796fc;
+    }
+
+    .section-contact div a {
+        padding: 0.5rem;
+    }
+
+    .newsletter {
+        height: 73vh;
+        margin-top: 5vh;
+
+    }
+
+
+  .small_player{
+    width: 20%;
+    }
+
+    .big_player {
+    display: none;
+    }
+}
+
+@media (min-width: 921px) {
+    .small_player{
+        display: none;
+    }
+    
+    .big_player {
+        width: 50%;
+    }
+
+    .section-video {
+        /* height: 85vh; */
+        scroll-margin-top: 10rem;
+    }
+
+    .section-shows {
+        text-align: center;
+        /* margin-top: 5vh; */
+        height: 50vh;
+        scroll-margin-top: 11rem;
+    }
+
+    .shows-table {
+        font-size: 1.3rem;
+    }
+
+    .section-music {
+        text-align: center;
+        margin-top: 5vh;
+        scroll-margin-top: 11rem;
+        height: 75vh;
+    }
+
+    .section-about {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 5vh;
+        scroll-margin-top: 11rem;
+        height: 60vh;
+        width: 50vw;
+    }
+
+    .section-about p {
+        font-size: 1.4rem;
+        font-family: 'Patrick Hand', cursive;
+    }
+
+    .section-contact {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 5vh;
+        scroll-margin-top: 11rem;
+        height: 20vh;
+        width: 50vw;
+    }
+
+    .section-contact a {
+        color: #a796fc;
+    }
+
+    .section-contact div a {
+        padding: 2rem;
+    }
+
+    .newsletter {
+        height: 56vh;
+        margin-top: 5vh;
+    }
+}
+
+
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top:2%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+}
+
+
+
+section h2 {
+    margin-bottom: 5%;
+    font-size: 1.8rem;
+}
+
+
+
+.shows-table {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.shows-table td, th {
+    padding: 15px;
+}
+
+/* Newsletter */
+
+.info {
+    width: 40%;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+
+form {
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.name > div, .email > div {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+
+.name > input, .email > input {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.email > input {
+    margin-bottom: 1rem;
+}
+
+.button {
+    text-align: center;
+}
+
+.button > input {
+    font-family: 'Patrick Hand', cursive;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    
+}
+
+.button > input:hover {
+    color: lightcoral;
+}
